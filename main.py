@@ -2,14 +2,14 @@ import random
 import time
 
 # CONFIG
-inf_risk = 0.33  # CHANCE OF INFECTING AN ADJACENT PERSON
-step_time = 2  # HOW LONG IN SECONDS BETWEEN EACH PROGRESSION STEP
+inf_risk = 0.33  # CHANCE OF INFECTING AN ADJACENT PERSON (Must be between 0.01 and 1.0 to work!)
+step_time = 2  # HOW LONG IN SECONDS BETWEEN EACH PROGRESSION STEP (This is how long you wait before seeing updates)
 days_per_step = 5  # DAYS EACH STEP REPRESENTS
 # TOTAL PEOPLE = ROWS * COLS
 rows = 20
 cols = 15
 disease_duration = 21  # HOW LONG THE DISEASE LASTS
-chance_of_death = 0.03  # CHANCE OF DYING BY THE END OF THE DISEASE DURATION
+chance_of_death = 0.03  # CHANCE OF DYING BY THE END OF THE DISEASE DURATION (Must be between 0.01 and 1.0 to work!)
 
 base = [[0 for i in range(rows)] for j in range(cols)]
 v = {}
