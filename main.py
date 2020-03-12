@@ -24,7 +24,7 @@ def infect(d, x, y):
         return
     if d[x][y] >= 1:
         return
-    if random.randint(1, 10) <= int(inf_risk * 10):
+    if random.randint(1, 100) <= int(inf_risk * 100):
         d[x][y] = 1
         v[(x, y)] = 1
         s[(x, y)] = 0
